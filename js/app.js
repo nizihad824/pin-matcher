@@ -18,7 +18,13 @@ function generatePin(){
 
 
 document.getElementById('key-pad').addEventListener('click',function(event){
-    console.log("any key clicked")
+
+    const number = event.target.innerText;
+    // console.log("any key clicked")
+    const calc =document.getElementById('typed-numbers');
+    calc.value = number;
+    
+
 
     
 
